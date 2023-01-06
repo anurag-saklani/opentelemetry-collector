@@ -21,7 +21,9 @@ processors:
 
 exporters:
   logging:
-    loglevel: debug
+    verbosity: detailed
+    sampling_initial: 50
+    sampling_thereafter: 2000
 
 service:
   pipelines:
